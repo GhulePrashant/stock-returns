@@ -13,7 +13,7 @@ chechBtn.addEventListener('click', ()=>{
     if(validateValues(purchasePrice, quantityOfStocks, sellingPrice)){
         calculateReturns(purchasePrice, quantityOfStocks, sellingPrice);
     }else{
-        output.style.backgroundColor = "red";
+        rightDiv.style.backgroundColor = "red";
         output.textContent = "Enter positive values."
     }
 });

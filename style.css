@@ -23,13 +23,13 @@ body{
     justify-content: center;
     background-color: #E5E7EB;
     border-radius: 0.25rem;
-    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.6);
 }
 
 .left{
     width: 50%;
     padding: 1.25rem;
-    background-color: #6366F1;
+    background-color: #8B5CF6;
 }
 
 label{
@@ -61,6 +61,10 @@ button{
     border: none;
     background-color: #D1D5DB;
     font-size: 1.1rem;
+}
+
+button:hover{
+    background-color: rgb(192, 189, 189);
 }
 
 .right{
