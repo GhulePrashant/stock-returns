@@ -34,13 +34,13 @@ function calculateReturns(purchasePrice, quantityOfStocks, sellingPrice){
     
     if(sellingPrice > purchasePrice){
         profit = (sellingPrice - purchasePrice) * quantityOfStocks;
-        profitPercent = Math.round((profit)/quantityOfStocks);
+        profitPercent = Math.round(((sellingPrice-purchasePrice)*100)/purchasePrice);
         output.textContent = `You have made profit of total ${profit} rupees.\nYou earned ${profitPercent}%`;
         rightDiv.style.backgroundColor = "green";
     }
     else if(purchasePrice > sellingPrice){
         loss = (purchasePrice - sellingPrice) * quantityOfStocks;
-        lossPercent = Math.round((loss)/quantityOfStocks);
+        lossPercent = Math.round(((purchasePrice - sellingPrice)*100)/purchasePrice);
 
         if(lossPercent >= 50){
             rightDiv.style.backgroundColor = "red";
